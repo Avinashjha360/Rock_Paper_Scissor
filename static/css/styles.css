@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: black;
+}
 
 .container {
   width: 100%;
@@ -107,32 +110,60 @@ footer {
 
 }
 @media (max-width:1000px) {
+  p{
+    font-size: 5rem;
+  }
   .head{
     font-size: 60px;
-    background-color: aqua;
+
   }
   .home{
+    position: absolute;
     margin-top: 300px;
+    max-height: 500px;
   }
   img {
     /* border: 1px solid black; */
-  
-    width: 70%;
+   width: 80%;
+    height: 80%;
   }
   .key{
+    
     display: flex;
+    position:relative;
+    top: 60;
     justify-content:space-evenly;
-    margin-top: 30px;
+    margin-top: 770px;
   }
   .key button{
+    text-align:bottom;
     margin-top: 200px;
-    height: 90px;
+    height: 470px;
+    width: 300px;
     border-radius: 15px;
     font-size: 4.5rem;
     padding: 0px 18px;
     cursor: pointer;
-    background-color: rgb(51, 161, 194);
+   
     color: rgb(117, 2, 2);
   
+  }
+  .key #button1{
+    background-image: url("./player1_3.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat:no-repeat;
+  }
+  .key #button2{
+    background-image: url("./player1_2.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat:no-repeat;
+  }
+  .key #button3{
+    background-image: url("./player1_1.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
